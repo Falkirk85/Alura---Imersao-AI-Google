@@ -1,0 +1,15 @@
+import random
+
+valor_secreto = random.choice(data)
+palavra_secreta = valor_secreto['palavra']  
+dica = valor_secreto['dica']
+print(f'A palavra secreta tem {len(palavra_secreta)} letras -> {dica}') #O "f" é usado qdo queremos juntar um texto, poderia ser print(palavra) e na linha debaixo print(dica), mas para sair na mesmo linha foi feito nesse metodo
+
+#Receber o palpite da tecnologia
+resposta = input(f'A palavra secreta é?')
+if(resposta == palavra_secreta):
+  print('Acertou')
+else:
+  print(f'Errou =(  ..a palavra secreta era {palavra_secreta})')
+
+#https://docs.python.org/pt-br/3/library/random.html
